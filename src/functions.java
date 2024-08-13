@@ -9,15 +9,12 @@ public class functions {
     }
 
     public static boolean q2(String s){
-        // Base case: if the string is empty or has one character, it's a palindrome
         if (s.length() <= 1) {
             return true;
         }
-        // Check the first and last characters
         if (s.charAt(0) != s.charAt(s.length() - 1)) {
             return false;
         }
-        // Recursively check the substring without the first and last characters
         return q2(s.substring(1, s.length() - 1));
     }
     public static int count_digit(int n,int digit) {
